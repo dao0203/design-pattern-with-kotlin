@@ -1,7 +1,7 @@
 package iterator
 
 class BookShelf(
-    private val maxSize: Int = 0
+    maxSize: Int = 0
 ) : Iterable<Book?> {
 
     private  var books: Array<Book?> = arrayOfNulls(maxSize)
