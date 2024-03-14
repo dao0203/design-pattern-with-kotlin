@@ -4,7 +4,7 @@ class BookShelf(
     maxSize: Int = 0
 ) : Iterable<Book?> {
 
-    private  var books: Array<Book?> = arrayOfNulls(maxSize)
+    private var books: Array<Book?> = arrayOfNulls(maxSize)
     private var last = 0
 
 
