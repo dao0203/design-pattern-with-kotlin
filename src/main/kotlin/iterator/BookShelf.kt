@@ -4,7 +4,7 @@ class BookShelf(
     maxSize: Int = 0
 ) : Iterable<Book?> {
 
-    private var books: Array<Book?> = arrayOfNulls(maxSize)
+    private var books: ArrayList<Book?> = ArrayList(maxSize)
     private var last = 0
 
 
@@ -13,7 +13,7 @@ class BookShelf(
     }
 
     fun appendBook(book: Book) {
-        this.books[last] = book
+        books.add(last, book)
         last++
     }
 

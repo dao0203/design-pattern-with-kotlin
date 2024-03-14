@@ -9,6 +9,7 @@ class Main {
             bookShelf.appendBook(Book("Bible"))
             bookShelf.appendBook(Book("Cinderella"))
             bookShelf.appendBook(Book("Daddy-Long-Legs"))
+            bookShelf.appendBook(Book("East of Eden"))
 
             val it = bookShelf.iterator()
             while (it.hasNext()) {
