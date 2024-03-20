@@ -1,7 +1,6 @@
 package abstractfactory
 
 import abstractfactory.factory.Factory
-import kotlin.system.exitProcess
 
 class Main {
     companion object {
