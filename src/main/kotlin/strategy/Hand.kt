@@ -3,7 +3,7 @@ package strategy
 enum class Hand(
     private val handName: String,
     private val value: Int
-){
+) {
     ROCK("グー", 0),
     SCISSORS("チョキ", 1),
     PAPER("パー", 2);
