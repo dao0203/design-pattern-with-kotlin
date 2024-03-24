@@ -6,7 +6,7 @@ class StringDisplayImpl(
 
     private val width = string.toByteArray().size
     override fun rawOpen() {
-        println()
+        printLine()
     }
 
     override fun rawPrint() {
@@ -14,6 +14,14 @@ class StringDisplayImpl(
     }
 
     override fun rawClose() {
-        println()
+        printLine()
+    }
+
+    private fun printLine() {
+        print("+")
+        for (i in 0 until width) {
+            print("-")
+        }
+        println("+")
     }
 }

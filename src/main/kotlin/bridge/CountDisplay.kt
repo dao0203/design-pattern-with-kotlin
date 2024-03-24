@@ -1,7 +1,7 @@
 package bridge
 
 class CountDisplay(
-    private val impl: DisplayImpl
+    impl: DisplayImpl
 ) : Display(impl) {
     fun multiDisplay(times: Int) {
         open()
