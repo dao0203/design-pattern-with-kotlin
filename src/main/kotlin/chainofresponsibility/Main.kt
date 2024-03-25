@@ -11,7 +11,12 @@ class Main {
             val elmo = OddSupport("Elmo")
             val fred = LimitSupport("Fred", 300)
 
-            alice.setNext(bob).setNext(charlie).setNext(diana).setNext(elmo).setNext(fred)
+            alice
+                .setNext(bob)
+                .setNext(charlie)
+                .setNext(diana)
+                .setNext(elmo)
+                .setNext(fred)
 
             for (i in 0 until 500 step 33) {
                 alice.support(Trouble(i))
